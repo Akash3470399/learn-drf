@@ -4,8 +4,8 @@ from rest_framework.routers import DefaultRouter
 from .import views
 
 router = DefaultRouter()
-router.register(r'', views.StoreViewset)
+router.register('', views.StoreViewset)
 
 urlpatterns = [
-    path('',include(router.urls))
+    path('store/',include(router.urls))
 ]
